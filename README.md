@@ -11,7 +11,7 @@ Intermediate to advanced machine learning engineers familiar with:
 ## Setup
 1. Clone the repository:
    ```bash
-   git clone [https://github.com/trunghachi/LLMs.git](https://github.com/trunghachi/LLMs.git)
+   git clone https://github.com/trunghachi/LLMs.git
    cd llm-from-scratch
    ```
 2. Install dependencies:
