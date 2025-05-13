@@ -1,4 +1,4 @@
-# Build Production-Ready Large Language Models From Scratch
+# Build Your Own Large Language Models From Scratch
 
 This repository provides a comprehensive guide to building, training, fine-tuning, deploying, and applying Large Language Models (LLMs) for production use. It includes theoretical explanations, practical implementations in PyTorch, and hands-on projects.
 
