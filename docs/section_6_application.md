@@ -1,16 +1,37 @@
 # Section 6: Building the Application Layer
 
-Develop production-ready LLM applications.
+Large Language Models (LLMs) are often used in real-world applications through frameworks like Retrieval-Augmented Generation (RAG). This section explores how to build RAG-based applications, combining LLMs with external knowledge retrieval for improved accuracy and context-awareness.
 
-## Overview
-Applications like chatbots and search systems.
+## Objectives
+- Understand the RAG framework and its benefits.
+- Learn how to integrate LLMs with retrieval systems.
+- Prepare for Project 6, where you’ll build a RAG application.
 
-## RAG Pipeline
-- **Indexing**: Embed with Sentence-Transformers.
-- **Retrieval**: FAISS for vector search.
-- **Generation**: Pretrained LLM.
+## What is RAG?
+- **Purpose**: Enhances LLMs by retrieving relevant documents before generation.
+- **How It Works**:
+  - Retrieve: Use a vector database (e.g., FAISS) to find relevant documents.
+  - Generate: Pass retrieved documents as context to the LLM for generation.
+- **Benefit**: Improves factual accuracy and reduces hallucination.
 
-## Implementation
+## Building a RAG Pipeline
+- **Components**:
+  - **Embedding Model**: Converts documents and queries into vectors (e.g., Sentence-Transformers).
+  - **Vector Database**: Stores embeddings for fast retrieval (e.g., FAISS).
+  - **LLM**: Generates responses based on retrieved context. 
+- **Workflow**:
+  1. **Indexing**: Index documents in a vector database.
+  2. **Retrieval**: Embed the query and retrieve top-k documents.
+  3. **Generation**: Pass documents and query to the LLM for generation.
+
+## Practical Implementation
+You’ll build a RAG pipeline using FastAPI, FAISS, and Sentence-Transformers. The code is located in `src/section_6_application/`:
+- `embedding_generator.py`: Generates embeddings for documents.
+  - **Code Placeholder**: Implement embedding generation with Sentence-Transformers.
+- `rag_pipeline.py`: Implements the full RAG pipeline.
+  - **Code Placeholder**: Implement retrieval and generation logic.
+
+
 Below is a FastAPI-based RAG pipeline (see `src/section_6_application/rag_pipeline.py`).
 
 ```python
@@ -62,5 +83,17 @@ Run with:
 python src/section_6_application/rag_pipeline.py
 ```
 
-## Project
-See [Project 6: RAG Application with FastAPI](project_6_rag.md).
+### Project 6: RAG Application with FastAPI
+- **Goal**: Build a RAG-based application for question answering.
+- **Steps**:
+  1. Index a small document set using FAISS.
+  2. Build a RAG pipeline in `rag_pipeline.py`.
+  3. Expose the pipeline via a FastAPI endpoint.
+- **Details**: See [Project 6: RAG Application with FastAPI](project_6_rag.md).
+
+## Next Steps
+Proceed to [Section 7: Ethical Considerations and Safety](section_7_ethics.md) to explore ethical challenges.
+
+## Additional Resources
+- RAG Paper: [Retrieval-Augmented Generation](https://arxiv.org/abs/2005.11401)
+- FAISS Documentation: [FAISS](https://github.com/facebookresearch/faiss)
