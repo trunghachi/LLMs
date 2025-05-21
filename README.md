@@ -64,11 +64,18 @@ LLMs/
    git clone https://github.com/trunghachi/LLMs.git
    cd LLMs
    ```
-2. Install dependencies:
+2. Create conda environment:
+   ```
+   conda create -n llm_basic python=3.9 -y
+   conda activate llm_basic
+   ```
+3.  Install dependencies:
    ```bash
    pip install -r requirements.txt
+   pip install faiss-gpu
+   ...
    ```
-3. Download datasets (e.g., Wikitext, Alpaca):
+4. Download datasets (e.g., Wikitext, Alpaca):
    ```bash
    python scripts/download_datasets.py
    ```
