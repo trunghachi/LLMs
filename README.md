@@ -63,9 +63,9 @@ LLMs/
    ```bash
    git clone https://github.com/trunghachi/LLMs.git
    cd LLMs
-   ```bash
-2. Create conda environment:
    ```
+2. Create conda environment:
+   ```bash
    conda create -n llm_basic python=3.9 -y
    conda activate llm_basic
    ```
