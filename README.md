@@ -62,7 +62,7 @@ LLMs/
 1. Clone the repository:
    ```bash
    git clone https://github.com/trunghachi/LLMs.git
-   cd llm-from-scratch
+   cd LLMs
    ```
 2. Install dependencies:
    ```bash
