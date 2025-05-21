@@ -63,7 +63,7 @@ LLMs/
    ```bash
    git clone https://github.com/trunghachi/LLMs.git
    cd LLMs
-   ```
+   ```bash
 2. Create conda environment:
    ```
    conda create -n llm_basic python=3.9 -y
@@ -73,6 +73,7 @@ LLMs/
    ```bash
    pip install -r requirements.txt
    pip install faiss-gpu
+   # ...
    ```
 4. Download datasets (e.g., Wikitext, Alpaca):
    ```bash
