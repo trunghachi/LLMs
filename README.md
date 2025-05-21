@@ -73,7 +73,6 @@ LLMs/
    ```bash
    pip install -r requirements.txt
    pip install faiss-gpu
-   # ...
    ```
 4. Download datasets (e.g., Wikitext, Alpaca):
    ```bash
